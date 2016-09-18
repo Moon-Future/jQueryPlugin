@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>网易云音乐</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+	<script type="text/javascript" src="js/wangyiMusic.js"></script>
+</head>
+<body>
+	<div class="music">
+		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="http://music.163.com/outchain/player?type=2&id=2080139&auto=0&height=32"></iframe>
+		<button id="1">按钮1</button>
+		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="http://music.163.com/outchain/player?type=2&id=34923114&auto=0&height=32"></iframe>
+		<button id="2">按钮2</button>
+		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="http://music.163.com/outchain/player?type=2&id=3413782&auto=0&height=32"></iframe>
+		<button id="3">按钮3</button>
+		<iframe class="play" frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="http://music.163.com/outchain/player?type=2&id=1791490&auto=0&height=32"></iframe>
+		<button id="4">按钮4</button>
+	</div>
+</body>
+	<script type="text/javascript">
+		$('#1').on('click',function(){
+			$($('iframe')[0]).playThisStopOther();
+		});
+		$('#2').on('click',function(){
+			$($('iframe')[1]).playThisStopOther();
+		});
+		$('#3').on('click',function(){
+			$($('iframe')[2]).playThisStopOther();
+		});
+		$('#4').on('click',function(){
+			$($('iframe')[3]).playThisStopOther();
+		});
+	</script>
+</html>
